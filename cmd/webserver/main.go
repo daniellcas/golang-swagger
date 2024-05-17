@@ -21,10 +21,10 @@ func main() {
 	ws := http.NewServeMux()
 
 	// Creating routes
-	ws.HandleFunc("/finances", handlers.GetFinances)
+	ws.HandleFunc("GET /finances", handlers.GetFinances)
 
 	// Docs
-	ws.HandleFunc("/docs/*", httpSwagger.Handler(httpSwagger.URL("http://localhost:3000/docs/doc.json")))
+	ws.HandleFunc("GET /docs/*", httpSwagger.Handler(httpSwagger.URL("http://localhost:3000/docs/doc.json")))
 
 	// Starting WebServer
 	http.ListenAndServe(":3000", ws)
