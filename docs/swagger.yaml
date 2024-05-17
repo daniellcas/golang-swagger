@@ -1,0 +1,10 @@
+basePath: /
+info:
+  contact:
+    email: danielsantos120615@gmail.com
+    name: Daniel lucas
+  description: This is an example of an api using swagger
+  title: Finances example api
+  version: v0.0.1
+paths: {}
+swagger: "2.0"

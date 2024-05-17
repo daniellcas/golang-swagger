@@ -1,0 +1,14 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is an example of an api using swagger",
+        "title": "Finances example api",
+        "contact": {
+            "name": "Daniel lucas",
+            "email": "danielsantos120615@gmail.com"
+        },
+        "version": "v0.0.1"
+    },
+    "basePath": "/",
+    "paths": {}
+}
