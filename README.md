@@ -23,9 +23,9 @@ No código acima conseguimos gerar uma página do swagger em nossa api, trazendo
     importante dar um export dos binários instalados no go, para rodar o comando init.
 5. Assim que esse comando começar a rodar ele irá ler nossas especificações da documentação colocadas no projeto
 
-    - A especificação da aplicação está no [main.go]()
-    - A especificação das rota estará nos [handlers]()
-6. Passo final foi a criação da rota de acesso a doc que também está no [main.go]()
+    - A especificação da aplicação está no [main.go](https://github.com/daniellcas/golang-swagger/blob/main/cmd/webserver/main.go)
+    - A especificação das rota estará nos [handlers](https://github.com/daniellcas/golang-swagger/blob/main/internal/infra/webserver/handlers/finance_handlers.go)
+6. Passo final foi a criação da rota de acesso a doc que também está no [main.go](https://github.com/daniellcas/golang-swagger/blob/main/cmd/webserver/main.go#L27)
 7. Assim quando iniciarmos nosso servidor e acessarmos o caminho definido para o documentação iremos ter essa resposta.
 
 ![Imagem](/assets/image.png)
