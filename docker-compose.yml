@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  go_api_swagger:
+    image: golang:alpine
+    container_name: golang_swagger
+    working_dir: /api
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/api
+    command: go run cmd/webserver/main.go
+    # entrypoint: go run /api/cmd/webserver/main.go
