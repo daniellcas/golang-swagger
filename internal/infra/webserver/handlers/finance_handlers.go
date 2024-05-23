@@ -17,13 +17,16 @@ type OutputGetFinancesFailure struct {
 }
 
 // Get user finances
-// @Summary Get finances
-// @Description Get finances
-// @Tags finances
-// @Produce json
-// @Success 200 {object} []OutputGetFinances
-// @Failure 500 {object} OutputGetFinancesFailure
-// @Router /finances [get]
+//
+//	@Summary		Get finances
+//	@Description	Get finances
+//	@Tags			finances
+//	@Produce		json
+//	@Success		200	{object}	[]OutputGetFinances
+//	@Failure		500	{object}	OutputGetFinancesFailure
+//	@Failure		400	{object}	string
+//	@Security		ApiKeyAuth
+//	@Router			/finances [get]
 func GetFinances(w http.ResponseWriter, r *http.Request) {
 	output := []OutputGetFinances{
 		{

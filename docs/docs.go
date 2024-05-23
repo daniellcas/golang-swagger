@@ -20,6 +20,11 @@ const docTemplate = `{
     "paths": {
         "/finances": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "Get finances",
                 "produces": [
                     "application/json"
@@ -36,6 +41,12 @@ const docTemplate = `{
                             "items": {
                                 "$ref": "#/definitions/handlers.OutputGetFinances"
                             }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "string"
                         }
                     },
                     "500": {
@@ -73,6 +84,13 @@ const docTemplate = `{
                     "type": "integer"
                 }
             }
+        }
+    },
+    "securityDefinitions": {
+        "ApiKeyAuth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
         }
     }
 }`
