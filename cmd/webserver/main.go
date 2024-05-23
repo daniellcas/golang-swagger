@@ -26,6 +26,10 @@ func main() {
 	// Docs
 	ws.HandleFunc("GET /docs/*", httpSwagger.Handler(httpSwagger.URL("http://localhost:3000/docs/doc.json")))
 
+	ws.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
+		http.Redirect(w, r, "/docs", http.StatusPermanentRedirect)
+	})
+
 	// Starting WebServer
 	http.ListenAndServe(":3000", ws)
 }
