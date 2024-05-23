@@ -31,7 +31,11 @@ No código acima conseguimos gerar uma página do swagger em nossa api, trazendo
 ![Imagem](/assets/image.png)
 
 ---
+### Como rodar ?
+1. Foi adicionado um docker compose na aplicação para facilitar o modo de execução.
+2. somente rodar um `docker compose up` na raiz do projeto ele irá rodar e executar em sua porta `3000`.
 
+---
 ### Conclusão
 
 Esse foi um guia de como cheguei ao resultado de documentar aplicações e golang.
