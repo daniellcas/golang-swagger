@@ -30,6 +30,10 @@ No código acima conseguimos gerar uma página do swagger em nossa api, trazendo
 
 ![Imagem](/assets/image.png)
 
+![Imagem](/assets/image1.png)
+
+![Imagem](/assets/image2.png)
+
 ---
 ### Como rodar ?
 1. Foi adicionado um docker compose na aplicação para facilitar o modo de execução.
